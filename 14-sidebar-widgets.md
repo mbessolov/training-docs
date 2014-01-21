@@ -76,6 +76,6 @@ src/Acme/Bundle/TaskBundle
 
 9. Add Acme/Bundle/TaskBundle/Resources/public/assets.yml
 
-10. Run commands assets:install abd assetic:dump
+10. Run commands assets:install cache:clear and assetic:dump
 
 11. Ensure that Acme\Bundle\TaskBundle\Controller\Api\Rest\TaskController::getAssignedTasksAction method is used
