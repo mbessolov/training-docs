@@ -152,7 +152,7 @@ phpunit -c app/ --testsuite "Project OroCRM Unit Tests"
 Create parameters_test.yml, ensure that database is not the same as for main application, for example orocrm_training_test.
 
 ```
-app/console oro:install --env=test --company-short-name=Acme --company-name=Acme --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --sample-data=n
+app/console oro:install --env=test --organization-name="Acme" --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --sample-data=n
 app/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures vendor/oro/platform/src/Oro/Bundle/TestFrameworkBundle/Fixtures
 ```
 
